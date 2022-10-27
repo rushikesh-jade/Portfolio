@@ -1,0 +1,74 @@
+
+.main {
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 5rem;
+}
+
+.name::before {
+    content: "<h1>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    margin-top: -1rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.name::after {
+    content: "</h1>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    bottom: 16rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.role, .details > p {
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.role::before {
+    content: "<p>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    margin-top: -2rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.role::after {
+    content: "</p>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    bottom: 8.5rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.image > img {
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+}
+
+.header > h1 {
+    font-family: 'Freehand', cursive;
+}
+
+.title {
+    font-family: 'Luxurious Roman', cursive;
+}
