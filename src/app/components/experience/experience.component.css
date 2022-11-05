@@ -1,0 +1,136 @@
+
+.container {
+    margin-bottom: 10%;
+}
+
+.app_experience_header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin: 30px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+    color: var(--heading-color);
+}
+
+.app_experience_header h1 {
+    font-family: var(--content-font);
+}
+
+.app_experience_header::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--horizontal-bar-color);
+}
+
+.app_experience_header::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "02.";
+    margin-right: 10px;
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.app_exp {
+    font-family: var(--content-font);
+}
+
+.app_exp_work {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app_exp_work_content {
+    color: var(--content-color);
+    transition: var(--transition);
+}
+
+.app_exp_company_name {
+    float: left;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.app_exp_company_location {
+    float: right;
+    font-size: 1rem;
+    color: var(--dark-slate);
+}
+
+.app_exp_role {
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.app_exp_date_loc {
+    display: grid;
+    font-size: 0.9rem;
+    margin-top: -16px;
+}
+
+.app_exp_work_details {
+    margin-top: 16px;
+}
+
+.app_exp_work_details > p {
+    padding-left: 10px;
+}
+
+.app_exp_work_details > p::before {
+    content: "▹";
+    position: absolute;
+    margin-left: -16px;
+    color: var(--dark-slate);
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-slate);
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.app_exp_skills > .row {
+    justify-content: center;
+}
+
+.badge > div {
+    box-shadow: var(--skills-box-shaddow-color);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--skills-back-color);
+}
+
+.skill_name {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--skills-color);
+    transition: var(--transition);
+}
+
+@media only screen and (max-width: 481px) {
+    .app_exp_company_location {
+        display: none;
+    }
+}

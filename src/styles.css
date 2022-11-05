@@ -1,11 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Playfair+Display&display=swap");
+
+:root {
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --content-font: 'Playfair Display', 'Luxurious Roman', cursive;
+
+    --nav-height: 100px;
+    
+    --background-color: #fcfcfc;
+    /* --background-color: #233554; */
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --green: #64ffda;
+    --nav-color: var(--dark-slate);
+    --heading-color: var(--navy);
+    --horizontal-bar-color: var(--dark-slate);
+    --content-color: var(--dark-slate);
+    --skills-color: var(--dark-slate);
+    --skills-box-shaddow-color: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    --skills-back-color: initial;
+    --edu-card-box-shadow-color: 0px 0px 20px rgb(0 0 0 / 10%);
+
+    --transition: all 0.30s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
 
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1d1d1d !important;
-    color: #ffffff !important;
+    background-color: var(--background-color) !important;
+    transition: var(--transition);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-slate);
+    border: 3px solid var(--navy);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--navy);
 }

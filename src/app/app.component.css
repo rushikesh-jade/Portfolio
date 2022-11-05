@@ -1,7 +1,7 @@
 
 .main {
-    height: 100vh;
-    overflow: auto;
+    /* height: 100vh; */
+    /* overflow: auto; */
     display: flex;
     align-items: center;
 }
@@ -9,6 +9,8 @@
 .name {
     font-family: 'Luxurious Roman', cursive;
     font-size: 5rem;
+    /* position: absolute; */
+    margin-top: 18%;
 }
 
 .name::before {
@@ -59,16 +61,76 @@
     font-style: italic;
 }
 
+.details {
+    padding: 1.2rem 0 1.2rem 0.5rem;
+}
+
+.details::before {
+    content: "<p>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    margin-top: -2rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.details::after {
+    content: "</p>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    bottom: -31rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
 .image > img {
     position: absolute;
     right: 5rem;
     bottom: 0;
 }
 
-.header > h1 {
-    font-family: 'Freehand', cursive;
+.title, .title2 {
+    font-family: 'Luxurious Roman', cursive;
+    padding: 1.5rem 0;
 }
 
-.title {
-    font-family: 'Luxurious Roman', cursive;
+.title2 {
+    padding: 2.5rem 0;
+}
+
+.title::before, .title2::before {
+    content: "<h2>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    margin-top: -1.5rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.title::after {
+    content: "</h2>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    bottom: -6rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+}
+
+.title2::after {
+    content: "</h2>";
+    color: #626261;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 6rem;
+    bottom: -37.5rem;
+    font-family: 'Cookie', cursive;
+    font-style: italic;
 }

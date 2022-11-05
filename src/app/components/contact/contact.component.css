@@ -1,0 +1,86 @@
+
+.container {
+    margin-bottom: 15%;
+}
+
+.app_contact_header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+    color: var(--heading-color);
+}
+
+.app_contact_header h1 {
+    font-family: var(--content-font);
+}
+
+.app_contact_header::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "04.";
+    margin-left: 10px;
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.app_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app_contact_heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_contact_heading > h2 {
+    color: var(--dark-slate);
+    font-family: var(--content-font);
+    font-weight: 600;
+}
+
+.app_contact_msg {
+    width: 50%;
+}
+
+.app_contact_msg > div > p {
+    color: var(--light-slate);
+    font-size: 1.5rem;
+    font-family: var(--content-font);
+}
+
+.app_contact_msg > div > p > span {
+    color: var(--dark-slate);
+    font-family: var(--font-mono);
+}
+
+.email_link {
+    text-decoration: none;
+    font-family: var(--front-mono);
+    box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em, rgb(0 0 0 / 25%) 0px 0.125em 0.5em, rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(36,32,106);
+    background: linear-gradient(90deg, rgba(36,32,106,1) 0%, rgba(145,145,222,1) 51%, rgba(0,212,255,1) 100%);
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .app_contact_msg {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
