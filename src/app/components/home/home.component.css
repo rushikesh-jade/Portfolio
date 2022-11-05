@@ -5,12 +5,14 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 50px;
+    background: url(../../../assets/svg/background-blob.svg) no-repeat right;
 }
 
 .app_intro_1 {
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: 1.2rem;
+    transition: var(--transition);
 }
 
 .app_intro_2 {
@@ -29,6 +31,7 @@
     -webkit-animation: animated_text 10s ease-in-out infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 @keyframes animated_text {

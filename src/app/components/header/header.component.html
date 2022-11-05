@@ -2,14 +2,21 @@
 <div class="app_header">
     <nav class="app_header_nav">
         <div class="app_header_logo">
-            RUSH
+            <a href="#home"> RUSH</a>
         </div>
         <div class="app_header_menus">
             <ol class="app_menu">
-                <li><a href="">About</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+
+            <div class="app_menu_humberger">
+                
+            </div>
+
+            <ol class="app_theme">
                 <li class="theme" (click)="changeTheme()" *ngIf="day"><img src="../../../assets/svg/sun.svg" alt="" srcset=""></li>
                 <li class="theme" (click)="changeTheme()" *ngIf="night"><img src="../../../assets/svg/moon.svg" alt="" srcset=""></li>
             </ol>

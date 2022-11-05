@@ -81,12 +81,13 @@ ol {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    .app_header_logo {
-        
-    }
+.app_header_logo a {
+    text-decoration: none;
+    color: inherit;
+}
 
-    .app_header_menus {
+@media only screen and (max-width: 768px) {
+    .app_header_menus .app_menu {
         display: none;
     }
 }

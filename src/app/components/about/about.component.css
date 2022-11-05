@@ -69,6 +69,11 @@ h1, p {
     align-items: center;
 }
 
+.app_about_photo img:hover {
+    width: 420px;
+    transition: var(--transition);
+}
+
 @media only screen and (max-width: 481px) {
     .app_about > .row {
         width: 100%;
@@ -78,5 +83,8 @@ h1, p {
 @media only screen and (max-width: 768px) {
     .app_about > .row {
         width: 90%;
+    }
+    .container {
+        margin-bottom: 30%;
     }
 }

@@ -5,6 +5,7 @@ footer {
     align-items: center;
     font-family: var(--font-mono);
     color: var(--dark-slate);
+    margin-top: 10%;
 }
 
 .fun_cmt {
@@ -15,3 +16,6 @@ footer {
     padding: 0 20px 5px 20px;
 }
 
+.fun_cmt > div {
+    text-align: center;
+}
