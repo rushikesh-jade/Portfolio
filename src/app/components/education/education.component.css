@@ -1,0 +1,108 @@
+
+.container {
+    margin-bottom: 10%;
+}
+
+.app_education_header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin: 30px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+    color: var(--heading-color);
+}
+
+.app_education_header h1 {
+    font-family: var(--content-font);
+}
+
+.app_education_header::before {
+    position: relative;
+    bottom: 4px;
+    counter-increment: section 1;
+    content: "03.";
+    margin-right: 10px;
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.app_education_header::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--horizontal-bar-color);
+}
+
+.app_edu_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: var(--content-font);
+}
+
+.app_edu_details > .row {
+    width: 80%;
+    box-shadow: var(--edu-card-box-shadow-color);
+    padding: 1rem;
+    border-radius: 1.2rem;
+    margin: 1rem 0;
+}
+
+.app_edu_college_name {
+    color: var(--content-color);
+}
+
+.app_edu_college_name > div > .college_name {
+    float: left;
+    font-weight: 600;
+    font-size: 1.15rem;
+    letter-spacing: 0.1px;
+}
+
+.app_edu_college_name > div > .college_marks {
+    float: right;
+}
+
+.app_edu_college_name > .college_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .app_edu_details > .row {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .app_edu_details > .row {
+        width: 100%;
+    }    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+    .app_edu_college_name {
+        width: 95%;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .app_edu_college_name > div > .college_marks {
+        float: left;
+    }
+}

@@ -1,0 +1,103 @@
+.container-fluid {
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.app_intro_1 {
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+}
+
+.app_intro_2 {
+    color: #382bf0;
+    background-image: -webkit-linear-gradient(0deg, #382bf0 0%, #bb0a5d 16%, #05e5b7 85%);
+    background-clip: text;
+    font-weight: 900;
+    font-size: 5.5vw;
+    background-size: 300%;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+    animation: animated_text 10s ease-in-out infinite;
+    -moz-animation: animated_text 10s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: animated_text 10s ease-in-out infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes animated_text {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+}
+
+.app_intro_3 {
+    color: var(--dark-slate);
+    font-size: 2.5vw;
+}
+
+.app_role_badges {
+    padding: 2rem;
+}
+
+.role_badge {
+    /* background-color: white; */
+    width: auto;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px;
+    /* color: var(--dark-slate); */
+    color: white;
+    font-family: var(--font-mono);
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: linear-gradient(90deg, rgba(36,32,106,1) 0%, rgba(145,145,222,1) 51%, rgba(0,212,255,1) 100%);
+    transition: var(--transition);
+}
+
+.role_badge:hover {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .app_role_badges {
+        display: grid;
+    }
+
+    .app_intro_2 {
+        letter-spacing: -1px;
+        font-size: 8vw;
+    }
+
+    .app_intro_3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 0;
+        justify-content: center;
+    }
+}

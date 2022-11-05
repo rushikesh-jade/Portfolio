@@ -1,0 +1,77 @@
+
+<div class="container">
+    <div class="app_education_header">
+        <h1>I've Studied</h1>
+    </div>
+
+    <div class="app_edu_details">
+        <div class="row" *ngFor="let college of educationDetails">
+            <div class="col-lg-1 col-md-1 col-sm-3">
+                <img src={{college.logoURL}} alt="" srcset="" width="60px">
+            </div>
+            <div class="col-lg-11 col-md-11 col-sm-9">
+                <div class="app_edu_college_name">
+                    <div class="" style="display: inline-block; width: 100%">
+                        <p class="college_name">{{ college.name }}</p>
+                        <p class="college_marks">{{ college.marks }}</p>
+                    </div>
+                    <div class="college_details">
+                        <div class="">
+                            <span class="college_address">{{ college.address }}</span> <br>
+                            <span class="college_degree">{{ college.degree }}</span>
+                        </div>
+                        <div class="">
+                            {{ college.year }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-lg-1">
+                <img src="../../../assets/images/gcoej_logo.png" alt="" srcset="" width="70px">
+            </div>
+            <div class="col-lg-11">
+                <div class="app_edu_college_name">
+                    <div class="" style="display: inline-block; width: 100%">
+                        <p class="college_name">Government College Of Engineering</p>
+                        <p class="college_marks">CGPA: 7.5 / 10</p>
+                    </div>
+                    <div class="college_details">
+                        <div class="">
+                            <span class="college_address">Jalgaon, Maharashtra, India</span> <br>
+                            <span class="college_degree">B.Tech. Computer Engineering</span>
+                        </div>
+                        <div class="">
+                            2016 - 2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1">
+                <img src="../../../assets/images/gcoej_logo.png" alt="" srcset="" width="70px">
+            </div>
+            <div class="col-lg-11">
+                <div class="app_edu_college_name">
+                    <div class="" style="display: inline-block; width: 100%">
+                        <p class="college_name">Government College Of Engineering</p>
+                        <p class="college_marks">CGPA: 7.5 / 10</p>
+                    </div>
+                    <div class="college_details">
+                        <div class="">
+                            <span class="college_address">Jalgaon, Maharashtra, India</span> <br>
+                            <span class="college_degree">B.Tech. Computer Engineering</span>
+                        </div>
+                        <div class="">
+                            2016 - 2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
