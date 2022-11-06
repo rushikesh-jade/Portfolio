@@ -57,7 +57,15 @@
     box-shadow: var(--edu-card-box-shadow-color);
     padding: 1rem;
     border-radius: 1.2rem;
+    margin: 2rem 0;
+}
+
+.app_edu_details > .row:first-child {
     margin: 1rem 0;
+}
+
+.app_edu_details > .row:last-child {
+    margin: 0.9rem 0;
 }
 
 .app_edu_college_name {
@@ -108,4 +116,26 @@
     .container {
         margin-bottom: 30%;
     }
+}
+
+.borderr {
+    position: absolute;
+    border-right: 1px solid var(--dark-slate);
+    height: 6%;
+    /* left: 24px;
+    top: 0; */
+    width: 1px;
+    z-index: -1;
+    margin-top: 5rem;
+}
+
+.border1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.app_edu_details > .row:last-child .borderr {
+    display: none;
 }

@@ -15,6 +15,11 @@
     transition: var(--transition);
 }
 
+.app_intro_1:hover {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 .app_intro_2 {
     color: #382bf0;
     background-image: -webkit-linear-gradient(0deg, #382bf0 0%, #bb0a5d 16%, #05e5b7 85%);
@@ -51,6 +56,7 @@
 .app_intro_3 {
     color: var(--dark-slate);
     font-size: 2.5vw;
+    font-family: var(--content-font);
 }
 
 .app_role_badges {
