@@ -23,3 +23,27 @@
         </div>
     </nav>
 </div>
+
+<div class="social-section">
+    <div class="social-media-section">
+        <ul *ngFor="let icon of iconsName">
+            <li *ngIf="checkForEmail(icon.name); else email;">
+                <a *ngIf="day; else night" href={{icon.url}}>
+                    <img src="../../../assets/svg/{{icon.name}}-dark.svg" alt="" srcset="">
+                </a>
+                <ng-template #night>
+                    <a href={{icon.url}}>
+                        <img src="../../../assets/svg/{{icon.name}}.svg" alt="" srcset="">
+                    </a>
+                </ng-template>
+            
+            </li>
+            <ng-template #email>
+                <li class="email-text">
+                    <a href="mailto:jaderushi2014@gmail.com">{{ icon.url }}</a>
+                </li>
+            </ng-template>
+        </ul>
+        <span></span>
+    </div>
+</div>
