@@ -1,17 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  providers: [FooterComponent]
 })
 export class HeaderComponent implements OnInit {
 
   menus = ['About', 'Experience', 'Work', 'Contact']
   day: boolean = true;
   night: boolean = false;
+  iconsName = [
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/rushikesh-jade/' },
+    { name: 'github', url: 'https://github.com/leviosa19' },
+    { name: 'twitter', url: 'https://twitter.com/JadeRushikesh' },
+    { name: 'instagram', url: 'https://www.instagram.com/i.m.the.rush/' },
+    { name: 'email', url: 'jaderushi2014@gmail.com' }
+  ]
 
-  constructor() { }
+  constructor(private footer: FooterComponent) { }
 
   ngOnInit(): void {
   }
@@ -42,6 +51,10 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--skills-box-shaddow-color', 'rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px');
       document.documentElement.style.setProperty('--edu-card-box-shadow-color', '0px 0px 20px rgb(0 0 0 / 10%)');
     }
+  }
+
+  checkForEmail(email: string) {
+    return email != 'email';
   }
 
 }
