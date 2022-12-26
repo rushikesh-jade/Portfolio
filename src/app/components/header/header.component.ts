@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  providers: [FooterComponent]
 })
 export class HeaderComponent implements OnInit {
 
@@ -19,10 +17,15 @@ export class HeaderComponent implements OnInit {
     { name: 'instagram', url: 'https://www.instagram.com/i.m.the.rush/' },
     { name: 'email', url: 'jaderushi2014@gmail.com' }
   ]
+  displayHamberger: boolean = false;
 
-  constructor(private footer: FooterComponent) { }
+  constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  toggleMenu(): boolean {
+    this.displayHamberger = !this.displayHamberger;
+    return this.displayHamberger;
   }
 
   changeTheme() {
@@ -37,6 +40,8 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--content-color', 'var(--light-slate)');
       document.documentElement.style.setProperty('--skills-color', 'var(--light-slate)');
       document.documentElement.style.setProperty('--skills-back-color', 'whitesmoke');
+      document.documentElement.style.setProperty('--circle-border-color', 'var(--light-slate)');
+
       document.documentElement.style.setProperty('--skills-box-shaddow-color', 'rgb(252 252 255 / 50%) 0px 4px 16px, rgb(255 255 255 / 20%) 0px 8px 32px');
       document.documentElement.style.setProperty('--edu-card-box-shadow-color', '0px 0px 20px rgb(255 255 255 / 40%)');
     }
@@ -48,6 +53,8 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--content-color', 'var(--dark-slate)');
       document.documentElement.style.setProperty('--skills-color', 'var(--dark-slate)');
       document.documentElement.style.setProperty('--skills-back-color', 'initial');
+      document.documentElement.style.setProperty('--circle-border-color', 'white');
+
       document.documentElement.style.setProperty('--skills-box-shaddow-color', 'rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px');
       document.documentElement.style.setProperty('--edu-card-box-shadow-color', '0px 0px 20px rgb(0 0 0 / 10%)');
     }
