@@ -137,6 +137,7 @@ ol {
 .app_header_logo a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Lora';
 }
 
 .social-media-section {
