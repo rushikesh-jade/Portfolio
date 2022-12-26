@@ -5,21 +5,22 @@
             <a href="#home"> RUSH</a>
         </div>
         <div class="app_header_menus">
-            <ol class="app_menu">
+            <ol id="app_menu" class="app_menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ol>
-
-            <div class="app_menu_humberger">
-                
-            </div>
-
             <ol class="app_theme">
                 <li class="theme" (click)="changeTheme()" *ngIf="day"><img src="../../../assets/svg/sun.svg" alt="" srcset=""></li>
                 <li class="theme" (click)="changeTheme()" *ngIf="night"><img src="../../../assets/svg/moon.svg" alt="" srcset=""></li>
             </ol>
+            
+            <div class="app_menu_hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
     </nav>
 </div>
@@ -47,3 +48,39 @@
         <span></span>
     </div>
 </div>
+
+<!-- <div class="center-con">
+    <div class="round">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="social-section-bottom">
+    <div class="social-media-section-bottom">
+        <ul>
+            <li *ngFor="let icon of iconsName">
+                <ng-template *ngIf="checkForEmail(icon.name); else email;">
+
+                    <a *ngIf="day; else night" href={{icon.url}} target="_blank">
+                        <img src="../../../assets/svg/{{icon.name}}-dark.svg" alt="" srcset="">
+                    </a>
+                    <ng-template #night>
+                        <a href={{icon.url}} target="_blank">
+                            <img src="../../../assets/svg/{{icon.name}}.svg" alt="" srcset="">
+                        </a>
+                    </ng-template>
+                </ng-template>
+                <ng-template #email>
+                    <li class="email-text">
+                        <a href="mailto:jaderushi2014@gmail.com" target="_blank">
+                            <img src="../../../assets/svg/mail-dark.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                </ng-template>
+            </li>
+        </ul>
+    </div>
+</div> -->
