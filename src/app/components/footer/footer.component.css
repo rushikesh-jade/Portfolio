@@ -6,6 +6,7 @@ footer {
     font-family: var(--font-mono);
     color: var(--dark-slate);
     margin-top: 10%;
+    margin-bottom: 60px;
 }
 
 .fun_cmt {
