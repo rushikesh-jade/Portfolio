@@ -68,7 +68,7 @@
 .app_exp_company_location {
     float: right;
     font-size: 1rem;
-    color: var(--dark-slate);
+    /* color: var(--dark-slate); */
 }
 
 .app_exp_role {
