@@ -23,7 +23,7 @@
     --content-color: var(--dark-slate);
     --skills-color: var(--dark-slate);
     --skills-back-color: initial;
-    --circle-border-color: #fff
+    --circle-border-color: #fff;
 
     --skills-box-shaddow-color: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     --edu-card-box-shadow-color: 0px 0px 20px rgb(0 0 0 / 10%);
