@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Lora&family=Poppins:wght@300&display=swap");
 
 :root {
-    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     --content-font: 'Poppins', 'Luxurious Roman', 'Lora', serif, 'Luxurious Roman', cursive;
 
     --nav-height: 100px;
-    
+
     --background-color: #fcfcfc;
     /* --background-color: #233554; */
     --dark-navy: #020c1b;
@@ -23,7 +23,7 @@
     --content-color: var(--dark-slate);
     --skills-color: var(--dark-slate);
     --skills-back-color: initial;
-    --circle-border-color: #fff
+    --circle-border-color: #fff;
 
     --skills-box-shaddow-color: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     --edu-card-box-shadow-color: 0px 0px 20px rgb(0 0 0 / 10%);
@@ -54,4 +54,19 @@ body {
 
 ::-webkit-scrollbar-track {
     background: var(--navy);
+}
+
+canvas {
+    z-index: 2;
+}
+
+.text {
+    text-align: center;
+    color: #ffffff6b;
+    font-size: 28px;
+    width: 100%;
+    top: 130px;
+    position: absolute;
+    margin: 0 auto;
+    display: block;
 }

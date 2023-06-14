@@ -22,6 +22,16 @@ export class ExperienceComponent implements OnInit {
     { name: 'SonarQube', imgUrl: '../../../assets/svg/sonarqube.svg' },
   ]
 
+  skillsImgForAjio = [
+    { name: 'Java', imgUrl: '../../../assets/svg/java.svg' },
+    { name: 'Spring Boot', imgUrl: '../../../assets/svg/spring.svg' },
+    { name: 'GIT', imgUrl: '../../../assets/svg/git.svg' },
+    { name: 'Jenkins', imgUrl: '../../../assets/svg/jenkins.svg' },
+    { name: 'Postman', imgUrl: '../../../assets/svg/postman.svg' },
+    { name: 'MongoDB', imgUrl: '../../../assets/svg/mongodb.svg' },
+    { name: 'Azure DevOps', imgUrl: '../../../assets/svg/azure-devops.svg' },
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
