@@ -20,6 +20,11 @@
     animation-fill-mode: both;
 }
 
+.name {
+    width: fit-content;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
 .app_intro_2 {
     color: #382bf0;
     background-image: -webkit-linear-gradient(0deg, #382bf0 0%, #bb0a5d 16%, #05e5b7 85%);
@@ -36,6 +41,7 @@
     -webkit-animation: animated_text 5s ease-in-out infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 0.8rem 5rem 0.8rem 2rem;
 }
 
 @keyframes animated_text {
@@ -107,5 +113,66 @@
     .container-fluid {
         padding: 0;
         justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+.var-highlight {
+    color: #c0ad60;
+}
+
+.key-color {
+    color: var(--key-color);
+}
+
+.string-highlight {
+    color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Courier New";
+    color: var(--key-color);
+    font-size: 24px;
+}
+
+#typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

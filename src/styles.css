@@ -24,11 +24,16 @@
     --skills-color: var(--dark-slate);
     --skills-back-color: initial;
     --circle-border-color: #fff;
+    --card-background: #fff;
+    --card-color: #000;
+    --role-color: var(--dark-navy);
+    --key-color: var(var(--dark-slate))
 
     --skills-box-shaddow-color: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     --edu-card-box-shadow-color: 0px 0px 20px rgb(0 0 0 / 10%);
 
     --transition: all 0.30s cubic-bezier(0.65, 0.05, 0.36, 1);
+
 }
 
 * {
