@@ -41,6 +41,10 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--skills-color', 'var(--light-slate)');
       document.documentElement.style.setProperty('--skills-back-color', 'whitesmoke');
       document.documentElement.style.setProperty('--circle-border-color', 'var(--light-slate)');
+      document.documentElement.style.setProperty('--card-background', '#191c29');
+      document.documentElement.style.setProperty('--card-color', '#8892b0');
+      document.documentElement.style.setProperty('--role-color', 'white');
+      document.documentElement.style.setProperty('--key-color', 'var(--light-slate)');
 
       document.documentElement.style.setProperty('--skills-box-shaddow-color', 'rgb(252 252 255 / 50%) 0px 4px 16px, rgb(255 255 255 / 20%) 0px 8px 32px');
       document.documentElement.style.setProperty('--edu-card-box-shadow-color', '0px 0px 20px rgb(255 255 255 / 40%)');
@@ -53,7 +57,11 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--content-color', 'var(--dark-slate)');
       document.documentElement.style.setProperty('--skills-color', 'var(--dark-slate)');
       document.documentElement.style.setProperty('--skills-back-color', 'initial');
-      document.documentElement.style.setProperty('--circle-border-color', 'white');
+      document.documentElement.style.setProperty('--circle-border-color', '#fff');
+      document.documentElement.style.setProperty('--card-background', '#fff');
+      document.documentElement.style.setProperty('--card-color', '#000');
+      document.documentElement.style.setProperty('--role-color', 'var(--dark-navy)');
+      document.documentElement.style.setProperty('--key-color', 'var(--dark-slate)');
 
       document.documentElement.style.setProperty('--skills-box-shaddow-color', 'rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px');
       document.documentElement.style.setProperty('--edu-card-box-shadow-color', '0px 0px 20px rgb(0 0 0 / 10%)');
