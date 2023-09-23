@@ -1,4 +1,3 @@
-
 .container {
     margin-bottom: 10%;
 }
@@ -11,7 +10,7 @@
     position: relative;
     margin: 30px 0px 40px;
     width: 100%;
-    font-size: clamp(26px,5vw,var(--fz-heading));
+    font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
     color: var(--heading-color);
 }
@@ -52,7 +51,7 @@
     font-family: var(--content-font);
 }
 
-.app_edu_details > .row {
+.app_edu_details>.row {
     width: 80%;
     box-shadow: var(--edu-card-box-shadow-color);
     padding: 1rem;
@@ -60,11 +59,11 @@
     margin: 2rem 0;
 }
 
-.app_edu_details > .row:first-child {
+.app_edu_details>.row:first-child {
     margin: 1rem 0;
 }
 
-.app_edu_details > .row:last-child {
+.app_edu_details>.row:last-child {
     margin: 0.9rem 0;
 }
 
@@ -72,18 +71,18 @@
     color: var(--content-color);
 }
 
-.app_edu_college_name > div > .college_name {
+.app_edu_college_name>div>.college_name {
     float: left;
     font-weight: 600;
     font-size: 1.15rem;
     letter-spacing: 0.1px;
 }
 
-.app_edu_college_name > div > .college_marks {
+.app_edu_college_name>div>.college_marks {
     float: right;
 }
 
-.app_edu_college_name > .college_details {
+.app_edu_college_name>.college_details {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,15 +90,15 @@
 }
 
 @media only screen and (min-width: 1025px) {
-    .app_edu_details > .row {
+    .app_edu_details>.row {
         width: 80%;
     }
 }
 
 @media only screen and (min-width: 769px) {
-    .app_edu_details > .row {
+    .app_edu_details>.row {
         width: 100%;
-    }    
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1025px) {
@@ -110,9 +109,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .app_edu_college_name > div > .college_marks {
+    .app_edu_college_name>div>.college_marks {
         float: left;
     }
+
     .container {
         margin-bottom: 30%;
     }
@@ -136,6 +136,118 @@
     width: 100%;
 }
 
-.app_edu_details > .row:last-child .borderr {
+.app_edu_details>.row:last-child .borderr {
     display: none;
+}
+
+
+/* New Card CSS */
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+.containers {
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    background: var(--card-background);
+    /* width: calc(var(--card-height) / 1.5); */
+    width: 350px;
+    height: 22rem;
+    padding: 30px;
+    position: relative;
+    border-radius: 6px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    display: flex;
+    font-size: 1.5em;
+    /* color: rgb(88 199 250 / 0%); */
+    color: var(--card-color);
+    cursor: pointer;
+    /* font-family: cursive; */
+    transition: all 0.5s;
+}
+
+.card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: all 1s;
+    padding: 25px;
+    /* transition: padding 0.5s linear; */
+    width: 400px;
+}
+
+.card:hover:before,
+.card:hover:after {
+    animation: none;
+    opacity: 0;
+}
+
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: calc(65vh / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(65vh / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+.college_name {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.college_degree {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.college_year {
+    font-size: 0.8rem;
+}
+
+.college_marks {
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
 }

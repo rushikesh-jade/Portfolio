@@ -17,6 +17,64 @@ footer {
     padding: 0 20px 5px 20px;
 }
 
-.fun_cmt > div {
-    text-align: center;
+.fun_cmt > .code > pre {
+    /* text-align: center; */
+    font-family: "Courier New";
+}
+
+
+
+.var-highlight {
+    color: #c0ad60;
+}
+
+.key-color {
+    color: var(--key-color);
+}
+
+.string-highlight {
+    color: rgba(253, 149, 90, 0.8);
+}
+
+#code1 {
+    font-size: 2em;
+    margin: 0;
+    font-family: "Courier New";
+    color: var(--key-color);
+    font-size: 20px;
+}
+
+#code1:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

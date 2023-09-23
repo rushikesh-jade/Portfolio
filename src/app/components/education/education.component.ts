@@ -9,7 +9,7 @@ export class EducationComponent implements OnInit {
 
   educationDetails = [
     { 
-      name: 'Government College Of Engineering',
+      name: 'Government College Of Engineering, Jalgaon',
       address: 'Jalgaon, Maharashtra, India',
       degree: 'B.Tech. Computer Engineering',
       year: '2016 - 2020',
@@ -17,7 +17,7 @@ export class EducationComponent implements OnInit {
       logoURL: '../../../assets/images/gcoej_logo.png'
     },
     { 
-      name: 'N.E.S. Higher Secondary School',
+      name: 'N.E.S. Higher Secondary School, Parola',
       address: 'Parola, Maharashtra, India',
       degree: '12th / Intermediate',
       year: '2015 - 2016',
@@ -25,7 +25,7 @@ export class EducationComponent implements OnInit {
       logoURL: '../../../assets/images/nes.jpeg'
     },
     { 
-      name: 'Dr. V.M. Jain Madhyamik Vidyalaya',
+      name: 'Dr. V.M. Jain Madhyamik Vidyalaya, Parola',
       address: 'Parola, Maharashtra, India',
       degree: '10th / High School',
       year: '2013 - 2014',

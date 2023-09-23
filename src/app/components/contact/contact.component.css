@@ -122,11 +122,19 @@
     text-decoration: none;
     font-family: 'Lora', monospace;
     box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em, rgb(0 0 0 / 25%) 0px 0.125em 0.5em, rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 5px;
     background: rgb(36, 32, 106);
     background: linear-gradient(90deg, rgba(36, 32, 106, 1) 0%, rgba(145, 145, 222, 1) 51%, rgba(0, 212, 255, 1) 100%);
     color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.email_link:hover {
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
