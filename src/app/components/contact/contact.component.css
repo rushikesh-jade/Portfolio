@@ -45,14 +45,14 @@
     align-items: center;
 }
 
-.app_contact_heading>h2 {
+.app_contact_heading > h2 {
     color: var(--dark-slate);
     font-family: var(--content-font);
     font-weight: 600;
 }
 
 .app_contact_msg {
-    width: 50%;
+    width: 55%;
 }
 
 .app_contact_msg > div > p {
@@ -104,19 +104,6 @@
 .app_contact_msg > div > p > span:hover::before {
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .email_link {
     text-decoration: none;
