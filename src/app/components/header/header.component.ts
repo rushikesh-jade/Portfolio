@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit {
       document.documentElement.style.setProperty('--skills-color', 'var(--dark-slate)');
       document.documentElement.style.setProperty('--skills-back-color', 'initial');
       document.documentElement.style.setProperty('--circle-border-color', '#fff');
-      document.documentElement.style.setProperty('--card-background', '#fff');
+      document.documentElement.style.setProperty('--card-background', 'aliceblue');
       document.documentElement.style.setProperty('--card-color', '#000');
       document.documentElement.style.setProperty('--role-color', 'var(--dark-navy)');
       document.documentElement.style.setProperty('--key-color', 'var(--dark-slate)');

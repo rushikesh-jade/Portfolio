@@ -1,11 +1,10 @@
-
 <div class="container">
     <div class="app_education_header">
         <h1>I've Studied</h1>
     </div>
 
     <div class="app_edu_details">
-        <div class="row" *ngFor="let college of educationDetails">
+        <!-- <div class="row" *ngFor="let college of educationDetails">
             <div class="col-lg-1 col-md-1 col-sm-3">
                 <img src={{college.logoURL}} alt="" srcset="" width="60px">
             </div>
@@ -29,6 +28,42 @@
             <div class="border1">
                 <div class="borderr"></div>
             </div>
+        </div> -->
+
+
+        <div class="containers">
+            <div class="card" *ngFor="let college of educationDetails">
+                <div class="" style="display: inline-block; width: 100%">
+                    <p class="college_name">{{ college.name }}</p>
+                    <p class="college_degree">
+                        <img src="../../../assets/svg/degree_icon.svg" alt="" srcset="">&nbsp;
+                        {{ college.degree }}
+                    </p>
+                    <p class="college_year">
+                        <img src="../../../assets/svg/calendar_icon.svg" alt="" srcset=""> &nbsp;
+                        {{ college.year }}
+                    </p>
+                </div>
+                
+                <div class="college_marks">
+                    <p>
+                        <img src="../../../assets/svg/badge_icon.svg" alt="" srcset="">&nbsp;
+                        {{ college.marks }}
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="card">
+                Magic Card
+            </div>
+            <div class="card">
+              Magic Card
+            </div>
+            <div class="card">
+              Magic Card
+            </div> -->
         </div>
+
+
     </div>
+
 </div>

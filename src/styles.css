@@ -24,7 +24,7 @@
     --skills-color: var(--dark-slate);
     --skills-back-color: initial;
     --circle-border-color: #fff;
-    --card-background: #fff;
+    --card-background: aliceblue;
     --card-color: #000;
     --role-color: var(--dark-navy);
     --key-color: var(var(--dark-slate));
@@ -74,4 +74,8 @@ canvas {
     position: absolute;
     margin: 0 auto;
     display: block;
+}
+
+img {
+    -webkit-user-drag: none;
 }
